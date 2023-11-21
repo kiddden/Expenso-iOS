@@ -15,12 +15,12 @@ enum LottieAnimType: String {
 struct LottieView: UIViewRepresentable {
     
     var animType: LottieAnimType
-    let animationView = AnimationView()
+    let animationView = LottieAnimationView()
     
     func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         
         let view = UIView()
-        let animation = Animation.named(animType.rawValue)
+        let animation = LottieAnimation.named(animType.rawValue)
         animationView.animation = animation
         animationView.contentMode = .scaleAspectFit
         animationView.backgroundBehavior = .pauseAndRestore
