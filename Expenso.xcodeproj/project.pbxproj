@@ -51,6 +51,9 @@
 		8081198D2B0CF75400474BB5 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8081198C2B0CF75400474BB5 /* DGCharts */; };
 		8081198F2B0CF75400474BB5 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8081198E2B0CF75400474BB5 /* DGChartsDynamic */; };
 		80FD4E252B0CF9D50092F3EF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 80FD4E242B0CF9D50092F3EF /* Lottie */; };
+		80FD4E272B0FA51F0092F3EF /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD4E262B0FA51F0092F3EF /* KeychainHelper.swift */; };
+		80FD4E2A2B0FA7E00092F3EF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD4E292B0FA7E00092F3EF /* Logger.swift */; };
+		80FD4E2C2B0FAFDE0092F3EF /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD4E2B2B0FAFDE0092F3EF /* SecurityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +100,9 @@
 		73E688D925FF32790000462A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		753CBDD225F36864005762B8 /* BiometricAuthUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthUtility.swift; sourceTree = "<group>"; };
 		75C6B47F25F37FD20079BCFC /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		80FD4E262B0FA51F0092F3EF /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		80FD4E292B0FA7E00092F3EF /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		80FD4E2B2B0FAFDE0092F3EF /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 		738B1C1625C65DFE0067407B /* Expenso */ = {
 			isa = PBXGroup;
 			children = (
+				80FD4E282B0FA7D60092F3EF /* Common */,
 				733763AA27120E0500AA983A /* Library */,
 				733763A927120DF300AA983A /* Resources */,
 				733763A827120DB600AA983A /* Screens */,
@@ -224,6 +231,8 @@
 				736C721A25CFE8E200720DEA /* LottieView.swift */,
 				73998C5425DA5578007D735B /* AttachmentHandler.swift */,
 				73E688D925FF32790000462A /* ChartView.swift */,
+				80FD4E262B0FA51F0092F3EF /* KeychainHelper.swift */,
+				80FD4E2B2B0FAFDE0092F3EF /* SecurityManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -304,6 +313,14 @@
 				753CBDD225F36864005762B8 /* BiometricAuthUtility.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		80FD4E282B0FA7D60092F3EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80FD4E292B0FA7E00092F3EF /* Logger.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +414,7 @@
 			files = (
 				738B1C3825C661750067407B /* ExpenseView.swift in Sources */,
 				73998C5525DA5578007D735B /* AttachmentHandler.swift in Sources */,
+				80FD4E272B0FA51F0092F3EF /* KeychainHelper.swift in Sources */,
 				738B1C8425C6764B0067407B /* ExpenseDetailedViewModel.swift in Sources */,
 				738B1C9025C680D20067407B /* AboutView.swift in Sources */,
 				738B1C4F25C663180067407B /* DateExtension.swift in Sources */,
@@ -414,11 +432,13 @@
 				738B1C4C25C663060067407B /* DismissKeyboard.swift in Sources */,
 				738B1C4625C662D90067407B /* TextView.swift in Sources */,
 				738B1C7B25C6752E0067407B /* AddExpenseViewModel.swift in Sources */,
+				80FD4E2C2B0FAFDE0092F3EF /* SecurityManager.swift in Sources */,
 				738B1C1825C65DFE0067407B /* ExpensoApp.swift in Sources */,
 				738B1C6C25C673FC0067407B /* ExpenseCSVModel.swift in Sources */,
 				738B1C4925C662F20067407B /* DropdownButton.swift in Sources */,
 				738B1C7025C674120067407B /* ExpenseSettingsViewModel.swift in Sources */,
 				738B1C2F25C65EF70067407B /* Configs.swift in Sources */,
+				80FD4E2A2B0FA7E00092F3EF /* Logger.swift in Sources */,
 				73E688DA25FF32790000462A /* ChartView.swift in Sources */,
 				736C721B25CFE8E200720DEA /* LottieView.swift in Sources */,
 				738B1C7725C675200067407B /* AddExpenseView.swift in Sources */,

@@ -12,7 +12,11 @@ import CoreData
 struct ExpensoApp: App {
     
     init() {
+        // Setting up the application
         self.setDefaultPreferences()
+        
+        // Security checks
+        SecurityManager.shared.performSecurityChecks()
     }
     
     private func setDefaultPreferences() {
